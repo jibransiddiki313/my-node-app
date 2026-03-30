@@ -17,7 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Testing application"
-                sh 'docker run --rm my-node-app node -e "console.log(\"App test passed!\")"'
+                sh "docker run --rm my-node-app node -e 'console.log(\"App test passed!\")'"
             }
         }
         stage('Deploy') {
