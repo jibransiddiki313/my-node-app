@@ -2,11 +2,11 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-    res.send('Hello! This is Jibran Irfan Siddiki - DevOps Engineer!')
+  res.send('Hello! This is Jibran Irfan Siddiki - DevOps Engineer And Aws solution certified! v2.0')
 })
 
 app.get('/health', (req, res) => {
-    res.send('App is running!')
+  res.send('App is running!')
 })
 
 const PORT = process.env.PORT || 8080
